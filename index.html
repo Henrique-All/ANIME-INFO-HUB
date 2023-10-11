@@ -10,7 +10,7 @@
     />
     <link rel="stylesheet" href="./styles.css" />
 
-    <title>Site ali aleatorio</title>
+    <title>ANIME INFO HUB</title>
   </head>
 
   <body>
@@ -35,22 +35,54 @@
               <i class="bx bxs-moon"></i>
             </label>
             <i class="bx bxs-user-circle" style="color: #00ff94"></i>
-            <p>login/register</p>
+            <a href="./src/pages/auth/index.html"><p>login/register</p></a>
           </div>
         </div>
       </nav>
     </header>
     <!-- End Header -->
 
-    <!-- <section class="main-slide hidden">
-      <div class="slide">
-        <img src="./src/assets/slide1.png" alt="" srcset="">
+    <!-- Cards Screen -->
+    <section class="main-slide hidden">
+      <button id="btn-prev"><i class="bx bx-chevrons-left"></i></button>
+      <div class="slider">
+        <div class="slide on">
+          <div class="card-left-content">
+            <img src="./src/assets/cards/pngwing 2.svg" class="slide-1" />
+            <p class="title">Temporadas: 3 | Episodios: 55</p>
+            <p>
+              Em Kimetsu no Yaiba, Tanjiro, um bondoso jovem que ganha a vida
+              vendendo carvão descobre que sua família foi massacrada por um
+              demônio. E, para piorar, Nezuko, sua irmã mais nova e única
+              sobrevivente, também acabou transformada em um demônio.
+            </p>
+            <button class="more">Click Me</button>
+          </div>
+          <div class="card-right-content">
+            <img src="./src/assets/cards/pngwing 1.svg"  />
+          </div>
+        </div>
         <div class="slide">
-          <img src="./src/assets/slide2.png" alt="" srcset="">
+          <div class="card-left-content">
+            <img src="./src/assets/cards/pngwing 3.svg" class="slide-2" />
+            <p class="title">Temporadas: 20 | Episodios: 500</p>
+            <p>
+              Naruto é uma série de mangá escrita e ilustrada por Masashi
+              Kishimoto, que conta a história de Naruto Uzumaki, um jovem ninja
+              que constantemente procura por reconhecimento e sonha em se tornar
+              Hokage, o ninja líder de sua vila.
+            </p>
+            <button class="more">Click Me</button>
+          </div>
+          <img
+            src="./src/assets/cards/5f70a6a954227d40738f6c4d5c7fe7c0-removebg-preview 1.svg"
+          />
         </div>
       </div>
-    </section> -->
+      <button id="btn-next"><i class="bx bx-chevrons-right"></i></button>
+    </section>
 
+    <!-- Biblioteca -->
     <section class="hidden">
       <div class="title">
         <h1>Lista de Animes</h1>
@@ -126,7 +158,10 @@
       </div>
     </section>
 
-    
+    <!-- dark theme & hidden -->
     <script src="./src/js/index.js"></script>
+
+    <!-- Card script -->
+    <script src="./src/js/cards/index.js" defer></script>
   </body>
 </html>

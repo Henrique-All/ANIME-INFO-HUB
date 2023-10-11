@@ -1,9 +1,9 @@
 // Dark Theme
 const $checkbox = document.querySelector("#on");
-const $html = document.querySelector("html");
+const $body = document.querySelector("html");
 
 $checkbox.addEventListener("change", () => {
-  $html.classList.toggle("dark");
+  $body.classList.toggle("dark");
 });
 
 // Class Hidden
@@ -20,4 +20,3 @@ const myObserver = new IntersectionObserver((entries) => {
 });
 
 elements.forEach((element) => myObserver.observe(element));
-
