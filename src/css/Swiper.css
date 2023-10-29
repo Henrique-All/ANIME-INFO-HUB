@@ -38,6 +38,10 @@
   background-color: transparent;
   font-size: 60px;
   cursor: pointer;
+
+  @media (max-width: 800px) {
+    display: none;
+  }
 }
 
 .main-slide #btn-next .bx-chevrons-right:hover {
@@ -77,10 +81,14 @@
   background-color: transparent;
   font-size: 60px;
   cursor: pointer;
+
+  @media (max-width: 800px) {
+    display: none;
+  }
 }
 
 .main-slide #btn-prev:hover > .bx-chevrons-left {
-  animation: hoverBtn 1000ms;
+  animation: hoverBtn 800ms;
 }
 
 .main-slide #btn-prev .bx-chevrons-left:hover {
