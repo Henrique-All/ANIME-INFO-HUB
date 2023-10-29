@@ -1,0 +1,83 @@
+@media (max-width: 1000px) {
+  .header-main {
+    display: none;
+  }
+}
+
+.header-main {
+  width: 100%;
+}
+
+.header-main .nav-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.header-main .nav-main img {
+  width: 90px;
+}
+
+.header-main .nav-main .sections {
+  display: flex;
+  gap: 30px;
+}
+
+.header-main .nav-main ul {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-main .nav-main ul li {
+  padding: 15px;
+  border-radius: 50px;
+  cursor: pointer;
+  border: transparent solid 1px;
+}
+
+.header-main .nav-main ul li:hover {
+  background-color: var(--button-background);
+  border: #000000 solid 1px;
+  transition: all ease-out 400ms;
+}
+
+.header-main .nav-main .bxs-moon {
+  font-size: 20px;
+  padding: 5px;
+  background-color: var(--button-background);
+  border: #000000 solid 1px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.header-main .nav-main .bxs-moon:hover {
+  transform: scale(1.2);
+  transition: all ease 200ms;
+}
+
+.header-main .nav-main .singin {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.header-main .nav-main .singin a {
+  color: #000000;
+}
+
+.header-main .nav-main .singin p {
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.header-main .nav-main .singin .bxs-user-circle {
+  font-size: 40px;
+  border-radius: 50%;
+  background-color: #000000;
+}
+
+/* header css End */

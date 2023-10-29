@@ -8,6 +8,11 @@
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./src/css/GlobalStyles.css" />
+    <link rel="stylesheet" href="./src/css/DarkTheme.css" />
+    <link rel="stylesheet" href="./src/css/Header.css" />
+    <link rel="stylesheet" href="./src/css/Swiper.css" />
+    <link rel="stylesheet" href="./src/css/Cards.css" />
     <link rel="stylesheet" href="./styles.css" />
 
     <title>ANIME INFO HUB</title>
@@ -42,8 +47,45 @@
     </header>
     <!-- End Header -->
 
+    <!-- Header Mobile -->
+
+    <header class="mobile-main">
+      <nav class="mobile-nav">
+        <div class="mobile-nav-header">
+          <div class="logo">
+            <img src="./src/assets/Logo.svg" alt="logo" />
+          </div>
+          <button id="menu"><i class="bx bx-menu"></i></button>
+          <button class="icon"><i class="bx bx-x"></i></button>
+        </div>
+        <div class="mobile-sections">
+          <!-- Sessões -->
+          <ul>
+            <li>HOME</li>
+            <li>FAVORITES</li>
+            <li>ABOUT</li>
+          </ul>
+
+          <div class="singin">
+            <div class="theme">
+              <input type="checkbox" name="on" id="on" />
+              <label for="on">
+                <i class="bx bxs-sun"></i>
+                <i class="bx bxs-moon"></i>
+              </label>
+            </div>
+
+            <div class="user">
+              <i class="bx bxs-user-circle" style="color: #00ff94"></i>
+              <a href="./src/pages/auth/index.html"><p>login/register</p></a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
     <!-- Cards Screen -->
-    <section class="main-slide hidden">
+    <section class="main-slide">
       <button id="btn-prev"><i class="bx bx-chevrons-left"></i></button>
       <div class="slider">
         <div class="slide on">
@@ -59,7 +101,7 @@
             <button class="more">Click Me</button>
           </div>
           <div class="card-right-content">
-            <img src="./src/assets/cards/pngwing 1.svg"  />
+            <img src="./src/assets/cards/pngwing 1.svg" />
           </div>
         </div>
         <div class="slide">
@@ -74,9 +116,11 @@
             </p>
             <button class="more">Click Me</button>
           </div>
-          <img
-            src="./src/assets/cards/5f70a6a954227d40738f6c4d5c7fe7c0-removebg-preview 1.svg"
-          />
+          <div class="card-right-content">
+            <img
+              src="./src/assets/cards/5f70a6a954227d40738f6c4d5c7fe7c0-removebg-preview 1.svg"
+            />
+          </div>
         </div>
       </div>
       <button id="btn-next"><i class="bx bx-chevrons-right"></i></button>
@@ -158,10 +202,14 @@
       </div>
     </section>
 
-    <!-- dark theme & hidden -->
-    <script src="./src/js/index.js"></script>
+    <!-- dark theme & hidden -->\
+    <script src="./src/js/darkTheme/index.js"></script>
+    <script src="./src/js/hidden/index.js"></script>
+
+    <!-- mobile -->
+    <script src="./src/js/mobile/index.js"></script>
 
     <!-- Card script -->
-    <script src="./src/js/cards/index.js" defer></script>
+    <script src="./src/js/sliders/index.js" defer></script>
   </body>
 </html>

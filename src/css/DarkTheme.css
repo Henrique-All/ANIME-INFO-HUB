@@ -1,0 +1,84 @@
+.dark {
+  background-color: var(--dark-background);
+  height: 100%;
+  background-position: center center;
+}
+
+.dark .header-main .nav-main ul li {
+  color: var(--color-dark);
+  border: solid 1px transparent;
+  cursor: pointer;
+}
+
+.dark .header-main .nav-main ul li:hover {
+  color: var(--color-dark);
+  background-color: #000000;
+  border: solid 1px var(--border-background);
+  transition: all ease-out 400ms;
+}
+
+.dark .bxs-sun {
+  display: flex;
+  color: white;
+}
+
+.dark .bxs-moon {
+  display: none;
+  color: white;
+}
+
+.dark .header-main .nav-main .bxs-sun {
+  font-size: 20px;
+  padding: 5px;
+  background-color: var(--dark-background);
+  border: var(--border-background) solid 1px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.dark .header-main .nav-main .bxs-sun:hover {
+  transform: scale(1.2);
+  transition: all ease 200ms;
+}
+
+.dark .header-main .nav-main .singin {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.dark .header-main .nav-main .singin p {
+  font-size: 15px;
+  cursor: pointer;
+  color: var(--border-background);
+}
+
+.dark .header-main .nav-main .singin .bxs-user-circle {
+  font-size: 40px;
+  border-radius: 50%;
+  color: var(--color-primary) !important;
+  background-color: var(--color-dark);
+}
+
+.dark .title {
+  color: var(--color-dark);
+}
+
+.dark .main-slide .slider .slide .card-left-content .title {
+  color: var(--color-dark);
+}
+
+.dark .main-slide .slider .slide .card-left-content p {
+  color: var(--primary-background);
+}
+
+.dark .main-slide #btn-next {
+  color: #dddddd;
+}
+
+.dark .main-slide #btn-prev {
+  color: #dddddd;
+}
+
+/* END DARK THEME */
